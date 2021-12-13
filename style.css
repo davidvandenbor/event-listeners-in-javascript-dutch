@@ -1,41 +1,88 @@
 
 body {
-  padding: 2em;
-  font-family: sans-serif
+    zoom:           200%;
+    margin:         0 auto;
+    padding:        5%;
+    max-width:      400px;
+    font-family:    sans-serif;
 }
 
-hr {
-  margin: 80px;
+button {
+    position:           relative;
+    background:         green;
+    margin-left:        5px;
+    margin-bottom:      5px;
+    color:              #fff;
+    padding:            20px 40px;
+    font-size:          30px;
+    border-radius:      10px;
+    outline:            0;
+    border:             none;
+    cursor:             pointer;
+    transition:         all .2s ease;
 }
 
-
-/* Examples of columns that scale automatically with CSS grid, no media queries needed! */
-
-.grid-container-cssgrid {
-  display:grid
+button:hover {
+    background:     #000;
 }
 
-.grid-container--fill {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+button:active {
+    margin:     8px 0 5px 5px;
 }
 
-.grid-container--fit {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.post-it {
+    background-color:       #ff0;
+    min-height:             100px;
+    transform:              rotate(5deg);
+    padding:                2%;
+    width:                  90%;
+    display:                grid;
+    text-align:             center;
+    align-items:            center;
+    margin:                 40px 0 60px 0;
+    box-shadow:             5px 10px 20px rgba(0,0,0,.541);
 }
 
-
-/* Same as above but with CSS columns instead of CSS grid! */
-
-.csscolumns {
-  columns:200px;
+img {
+    width:      100%;
+    height:     auto;
 }
 
-/* the blue columns themselves */
-.grid-element {
-  background-color: rgb(82, 160, 212);
-  padding: 30px;
-  gap:2px;
-  color: #fff;
-  border: 2px solid #fff;
-  break-inside: avoid;
+#roodblokje {
+    width:              100px;
+    height:             100px;
+    margin:             10px;
+    border-radius:      10px;
+    background:         red;
+    display:            inline-block;
+    transition:         all 2s ease-out;
+}
+
+#paarsblokje {
+    cursor:             pointer;
+    width:              100px;
+    height:             100px;
+    margin:             10px;
+    border-radius:      10px;
+    background:         #6e29a7;
+    display:            inline-block;
+    transition:         all 2s ease-out;
+}
+
+.beweging {
+    animation-name:                 beweging;
+    animation-duration:             .5s;
+    animation-timing-function:      ease-out;
+    animation-fill-mode:            forwards;
+    animation-iteration-count:      infinite;
+    animation-direction:            alternate;
+}
+
+@keyframes beweging {
+    0% {
+        transform:      rotate(0);
+    }
+    100% {
+        transform:      rotate(180deg);
+    }
 }
