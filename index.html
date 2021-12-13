@@ -1,77 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Scalable CSS grids and CSS columns without media queries</title>
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
+		<title>Event Listeners in Javascript - Dutch version</title>
+	</head>
 
-<p>Make the screen wider than 1330px and you'll see the difference between auto-fill and auto-fit! With auto-fit, the columns will automatically expand to take up all of the available horizontal space. </p>
+	<body>
+		<h1>Javascript events</h1>
+		<p>Muisovers en muisclicks!</p>
 
-   auto-fill
-<div class="grid-container-cssgrid grid-container--fill">
-  <div class="grid-element">
-    1
-  </div>
-  <div class="grid-element">
-    2
-  </div>
-  <div class="grid-element">
-    3
-  </div>
-  <div class="grid-element">
-    4
-  </div>
-  <div class="grid-element">
-    5
-  </div>
-</div>
+		<button class="hello">Hallo!</button>
+		<button class="goodbye">Tot ziens!</button>
+		<section class="post-it"></section>
 
-<hr>
+		<p>Je kan Event Listeners <strong>combineren</strong>, zodat je bijvoorbeeld één "verzamel" functie kan maken om ALLE muisklikken op te vangen of ALLE mouse-overs op te vangen! Handig! Je kan dan de CSS classes gebruiken van HTML elementen om aan te geven<strong> op welke objecten geklikt of gehoverd moet worden!</strong></p>
+		<img src="event-listener-global.png" alt="" />
 
-auto-fit
-<div class="grid-container-cssgrid grid-container--fit">
-  <div class="grid-element">
-    1
-  </div>
-  <div class="grid-element">
-    2
-  </div>
-  <div class="grid-element">
-    3
-  </div>
-  <div class="grid-element">
-    4
-  </div>
-  <div class="grid-element">
-    5
-  </div>
-</div>
+		<div id="paarsblokje"></div>
+		<div id="roodblokje"></div>
 
-<hr>
-
-<h2>CSS columns</h2>
-   <p>Notice the <strong>different</strong> order of the grid items in the columns, 1,2,3,4 etc!!</p>
-<div class="grid-container csscolumns">
-  <div class="grid-element">
-    1
-  </div>
-  <div class="grid-element">
-    2
-  </div>
-  <div class="grid-element">
-    3
-  </div>
-  <div class="grid-element">
-    4
-  </div>
-  <div class="grid-element">
-    5
-  </div>
-</div>
-
-</body>
+		<script src="scripts.js"></script>
+	</body>
 </html>
