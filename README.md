@@ -1,5 +1,9 @@
-# Scalable CSS grids and columns without media queries
+# Event Listeners in Javascript (Nederlandse versie)
 
 Play live with this code in **CodeSandBox** > [click here!](https://codesandbox.io/s/github/davidvandenbor/event-listeners-in-javascript-dutch)
 
-Example of how to scale a layout from mobile to desktop (and larger) by using CSS grid and CSS columns in a clever way without the need to define media queries for the amount of columns to use while scaling up or down!
+  Je kan event listeners **combineren**, zodat je bijvoorbeeld 
+	een functie kan maken om ALLE muisklikken op te vangen 
+	of ALLE mouse-overs op te vangen! Handig! Je kan dan de 
+	CSS classes gebruiken van HTML elementen om aan te geven 
+	op welke objecten geklikt of gehoverd moet worden!
